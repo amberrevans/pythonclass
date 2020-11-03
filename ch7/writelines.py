@@ -1,0 +1,22 @@
+#Amber Evans
+#10-30-2020
+#program 7-13
+#This program uses the writeline method to save a list
+#of strings to a file
+
+def main():
+    #Create a list of strings
+    citites = ['New York','Boston', 'Atlanta', 'Dallas']
+
+    #Open a file for writing
+    outfile = open('cities.txt','w')
+
+    #Write teh list to the file
+    outfile.writelines(citites)
+
+    #Close the file
+    outfile.close()
+
+#Call the main function
+if __name__ =='__main__':
+    main()
